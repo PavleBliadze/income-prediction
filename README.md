@@ -6,7 +6,7 @@ Everything is in one notebook: [`income_prediction.ipynb`](income_prediction.ipy
 
 ## Data
 
-100,000 clients, 21 numeric features and one target (income, between 200 and 10,000 GEL). The features describe incoming payments, transfers, turnover, balances, liabilities, loans and past income. The data is not included in this repository.
+100,000 clients, 21 numeric features and one target (income, between 200 and 10,000 GEL). The features describe incoming payments, transfers, turnover, balances, liabilities, loans and past income. The data is confidential and is not included in this repository.
 
 Things worth knowing about it:
 
@@ -36,13 +36,6 @@ Things worth knowing about it:
 
 The final model gives up some R2 on purpose. In income estimation a large overestimate for a low income client is worse than a slightly higher average error, so the last step trades overall fit for a more even error across income bands. The most important features are the client's minimum incoming payment and total incoming payments.
 
-## Running it
+## Reproducibility
 
-```bash
-python -m venv .venv
-.venv\Scripts\activate          # macOS/Linux: source .venv/bin/activate
-pip install -r requirements.txt
-jupyter lab
-```
-
-The notebook reads `income data.xlsx` (sheet `income_data`) from the project folder.
+The data is confidential and is not part of this repository, so the notebook cannot be re-run from here. All outputs are saved in the notebook, so the full analysis, tables and charts can be read directly on GitHub. `requirements.txt` lists the libraries that were used.
